@@ -1,0 +1,52 @@
+.size1 {
+  background-color: bisque;
+  height: 80px;
+  width: 80px;
+  font-size: 20px;
+}
+.size2 {
+  background-color: greenyellow;
+  height: 180px;
+  width: 180px;
+  font-size: 20px;
+}
+
+.size3 {
+  background-color: green;
+  height: 360px;
+  width: 360px;
+  font-size: 20px;
+}
+.outerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .boxContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .size2 {
+    align-self: flex-end;
+  }
+  .size1 {
+    align-self: flex-end;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
